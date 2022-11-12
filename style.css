@@ -1,0 +1,202 @@
+body{
+    background-color: #EBF9FF;
+} 
+header{
+    margin: 32px 0 90px;
+    padding: 20px 0;
+}
+
+header a{
+    color: black;
+    transition: all 0.1s ease-in;
+}
+header a:hover{
+  font-weight: 600;
+  color: #000;
+  border-bottom: 1px solid black;
+}
+
+section{
+    padding: 30px 0;  
+}
+
+section p{
+    margin: 16px 0 32px;
+    color: #000;
+}
+
+.active-btn{
+  color: #fff;
+  background-color: #FF6584;
+}
+
+.active-btn:hover{
+  color: #FF6584;
+  border:1px solid #FF6584;
+}
+
+
+footer{
+    background-color: #131313;
+    
+}
+
+footer,p,a{
+   color: #9CA3AF;
+   text-decoration: none;
+}
+
+.fo-s-1{
+padding: 80px 0 43px;
+}
+
+.fo-s-2{
+  padding: 43px 0 82px;
+  border-top: 1px solid #374151;
+}
+
+.fo-s-2 a{
+  border-bottom: 1px solid #9CA3AF;
+}
+
+.footer_section .fa-brands{
+  font-size: 20px;
+}
+
+.modal-content{
+  background-color:#EBF9FF;
+}
+
+
+/* form field  */
+
+.form-group{
+    position: relative;
+  }
+  
+  .success input{
+    border-width:2px;
+    border-color: #2ecc71;
+  }
+  
+  .error input{
+    border-width:2px;
+    border-color: #e74c3c;
+  }
+
+  .form-group i{
+    position: absolute;
+    top:13px;
+    right:10px;
+    visibility: hidden;
+  }
+  
+  .success i.fa-check-circle{
+    color:#2ecc71;
+    visibility: visible;
+  }
+  .error i.fa-exclamation-circle{
+    color:#e74c3c;
+    visibility: visible;
+  }
+  
+  .form-group small{
+    position: absolute;
+    left:1.5px;
+    visibility: hidden;
+  }
+  
+  .error small{
+    color:#e74c3c;
+    visibility: visible;
+  }
+  #langSmall{
+    position: absolute;
+    left:450px;
+    color:red;
+    visibility: hidden;
+    
+  }
+
+  .breed_section{
+    display: none;
+  }
+  /* form field  */
+  .tabs_toggle{
+    cursor: pointer;
+    
+}
+
+.tabs_toggle.is-active{
+    border-bottom:1px solid  #0075AA;
+    color: #0075AA;
+   
+}
+
+.tabs_content{
+    display: none;
+}
+
+.tabs_content.is-active{
+    display: block;
+}
+
+.table_head{
+  border-bottom:1px solid #000;
+}
+
+@media only screen and (max-width:768px){
+  header{
+    margin: 12px 0 20px;
+   
+  }
+    nav{  
+        height: 0px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        width: 100vw !important;
+        transition:0.2s;
+        background-color: #131313;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        visibility: hidden;
+      
+    }
+
+    .nav-bar.active{
+        height: 450px;
+        visibility: visible;
+    }
+
+    .head_pageLink li a{
+      color: #fff;
+    }
+
+    .head_socialLinks li a{
+      color: #fff;
+    }
+
+    .footer-col-1{
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .fo-s-1{
+      padding: 50px 0 32px;
+    }
+      
+    .fo-s-2{
+        padding: 0 0 60px;
+        border-top: none;
+    }
+}
+
+@media only screen and (max-width:429px){
+.logo{
+  width:250px;
+}
+
+}
