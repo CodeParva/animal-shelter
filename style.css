@@ -1,14 +1,26 @@
+/* Google-font-link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap');
+/* Google-font-link */
+
+
 body{
     background-color: #EBF9FF;
 } 
+
+/* Header start  */
+
 header{
-    margin: 32px 0 90px;
-    padding: 20px 0;
+    margin: 2rem 0 5.6rem;
+    padding: 1.25rem 0;
 }
 
 header a{
     color: black;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
     transition: all 0.1s ease-in;
+    font-family: roboto;
+    font-family: 'Roboto', sans-serif;
 }
 header a:hover{
   font-weight: 600;
@@ -16,13 +28,25 @@ header a:hover{
   border-bottom: 1px solid black;
 }
 
+/* Header end  */
+
+/* Main Body  */
+
 section{
-    padding: 30px 0;  
+    padding: 1.875rem 0;  
+}
+
+section h2{
+  line-height: 3rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 section p{
-    margin: 16px 0 32px;
+    margin: 1rem 0 2rem;
     color: #000;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .active-btn{
@@ -36,6 +60,10 @@ section p{
 }
 
 
+/* Main Body  */
+
+/* Footer Body  */
+
 footer{
     background-color: #131313;
     
@@ -47,21 +75,42 @@ footer,p,a{
 }
 
 .fo-s-1{
-padding: 80px 0 43px;
+padding: 5rem 0 2.68rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.footer-col-1 p{
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.footer-col-2 p,a{
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.125rem;
 }
 
 .fo-s-2{
-  padding: 43px 0 82px;
+  padding: 2.688rem 0 5.125rem;
   border-top: 1px solid #374151;
+  font-size:0.875rem;
+  line-height:1.25rem;
+  font-weight: 400;
 }
 
 .fo-s-2 a{
   border-bottom: 1px solid #9CA3AF;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
 }
 
 .footer_section .fa-brands{
-  font-size: 20px;
+  font-size: 1.25rem;
 }
+
+/* Footer Body  */
 
 .modal-content{
   background-color:#EBF9FF;
@@ -121,6 +170,7 @@ padding: 80px 0 43px;
   .breed_section{
     display: none;
   }
+
   /* form field  */
   .tabs_toggle{
     cursor: pointer;
@@ -145,15 +195,17 @@ padding: 80px 0 43px;
   border-bottom:1px solid #000;
 }
 
+/* Media Query Start  */
+
 @media only screen and (max-width:768px){
   header{
-    margin: 12px 0 20px;
+    margin: 0.75rem 0 1.25rem;
    
   }
     nav{  
         height: 0px;
         position: absolute;
-        top: 100px;
+        top: 6.25rem;
         left: 0;
         right: 0;
         width: 100vw !important;
@@ -185,18 +237,21 @@ padding: 80px 0 43px;
     }
 
     .fo-s-1{
-      padding: 50px 0 32px;
+      padding: 3.125rem 0 2rem;
     }
       
     .fo-s-2{
-        padding: 0 0 60px;
+        padding: 0 0 3.75rem;
         border-top: none;
     }
 }
+
+
 
 @media only screen and (max-width:429px){
 .logo{
   width:250px;
 }
-
 }
+
+/* Media Query Start  */
