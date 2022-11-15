@@ -124,12 +124,12 @@
     </footer>
 
   <!-- Adopt Modal -->
-  <div class="modal fade adopt-model" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content ">
+  <div class="modal fade adopt-model" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" >
+    <div class="modal-dialog modal-dialog-centered" >
+      <div class="modal-content " >
         <div class="modal-header border-bottom-0">
           <h3 class="modal-title text-center text-lg-start py-lg-2 pb-3" id="exampleModalLabel">Adopt a pet</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick=" location.reload()"></button>
         </div>
         <div class="modal-body ">
             <h5 class="mb-3">What pet do you want to adopt?</h5>
@@ -234,11 +234,11 @@
           <div class="modal-content ">
             <div class="modal-header border-bottom-0">
               <h3 class="modal-title text-center text-lg-start py-lg-2 pb-3" id="exampleModalLabel">Give Away</h3>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick=" location.reload()"></button>
             </div>
             <div class="modal-body ">
                 <h5 class="mb-3">What pet do you want to adopt?</h5>
-                <form action="#"class='formClass'id='formId'>
+                <form action="#"class='formClass'id='formIdToGive'>
                     
                     <!-- Pet Select field  -->
                     <div class="row">
@@ -285,7 +285,7 @@
                         <h6 class='my-2 mt-lg-0'>Name*</h6>
                         <div class="form-group">
                             <!-- <label for="regname">Name</label> -->
-                            <input type="text"class='form-control'id='regname'placeholder='Enter your name'>
+                            <input type="text"class='form-control'id='regnameToGive'placeholder='Enter your name'>
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-exclamation-circle"></i>
                             <small>Error Message</small>
@@ -299,7 +299,7 @@
                         <h6 class='mb-2'>Email address*</h6>
                             <div class="form-group">
                             <!-- <label for="regemail">Email</label> -->
-                                <input type="email"class='form-control'id='regemail'placeholder='Enter your email'>
+                                <input type="email"class='form-control'id='regemailToGive'placeholder='Enter your email'>
                                 <i class="fas fa-check-circle"></i>
                                 <i class="fas fa-exclamation-circle"></i>
                                 <small id='smalls'>Error Message</small>
@@ -313,7 +313,7 @@
                             <h6 class='mb-2'>Mobile*</h6>
                             <div class="form-group">
                                 <!-- <label for="regmobile">Mobile</label> -->
-                                <input type="text"class='form-control'id='regmobile'placeholder='Enter your mobile number'>
+                                <input type="text"class='form-control'id='regmobileToGive'placeholder='Enter your mobile number'>
                                     <i class="fas fa-check-circle"></i>
                                     <i class="fas fa-exclamation-circle"></i>
                                 <small>Error Message</small>
@@ -323,7 +323,7 @@
                 <!-- Mobile field  -->
                     <!-- <input type="submit"value=''class='btn btn-danger'id='btns'> -->
                     <div class="text-center text-lg-end mt-2">
-                        <button class="btn active-btn" type="submit" id="btns">REQUEST FOR ADOPTION</button>
+                        <button class="btn active-btn" type="submit" id="btns">REQUEST FOR GIVE AWAY</button>
                     </div>
                     
                 </form>

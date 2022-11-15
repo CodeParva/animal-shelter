@@ -41,11 +41,13 @@ regForm.addEventListener('submit',(e)=>{
     Validate();
 })
 
+
 function Validate(){
     // getting values from input 
     let regEmailValue = regEmail.value.trim();
     let regNameValue = regName.value.trim();
     let regMobileValue = regMobile.value.trim();
+
 
     let flag = 0;
 
@@ -95,6 +97,83 @@ function Validate(){
   else{
     setSuccessFor(regMobile);
   }
+
+  if(flag===0){
+    alert('Thank You, Will Soon get in touch with you for further details');
+    location.reload();
+  }
+}
+
+let formIdToGive = document.getElementById('formIdToGive');
+let regemailToGive = document.getElementById('regemailToGive');
+let regnameToGive = document.getElementById('regnameToGive');
+let regmobileToGive = document.getElementById('regmobileToGive');
+
+formIdToGive.addEventListener('submit',(e)=>{
+  e.preventDefault();
+  ValidateToBuy();
+})
+
+
+function ValidateToBuy(){
+  // getting values from input 
+  let regEmailValue = regemailToGive.value.trim();
+  let regNameValue = regnameToGive.value.trim();
+  let regMobileValue = regmobileToGive.value.trim();
+
+  let flag = 0;
+
+  
+   
+   
+
+// email validation 
+if(regEmailValue === ''){
+  setErrorFor(regemailToGive,'Email cannot be blank');
+  flag++;
+}
+else if(!isEmail(regEmailValue))
+{
+  setErrorFor(regemailToGive,'Enter a valid email');
+  flag++;
+}
+else{
+  setSuccessFor(regemailToGive);
+}
+
+// name validation
+if(regNameValue === ''){
+  setErrorFor(regnameToGive,'Name cannot be blank');
+  flag++;
+}
+
+else if(!isName(regNameValue))
+{
+  setErrorFor(regnameToGive,'Enter a valid Name');
+  flag++;
+}
+else{
+  setSuccessFor(regnameToGive);
+}
+
+// Mobile validation
+if(regMobileValue === ''){
+  setErrorFor(regmobileToGive,'Mobile cannot be blank');
+  flag++;
+}
+else if(!isMobile(regMobileValue))
+{
+  setErrorFor(regmobileToGive,'Enter a valid mobile number');
+  flag++;
+}
+else{
+  setSuccessFor(regmobileToGive);
+}
+
+if(flag===0){
+  alert('Thank You, Will Soon get in touch with you for further details');
+  location.reload();
+}
 }
 
 //----------------------------- Error Function   -------------------------- //
