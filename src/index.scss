@@ -1,0 +1,20 @@
+@import "./styles/animal-shelter";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap');
+
+.main-body{
+    background-color: #EBF9FF;
+} 
+
+footer{
+    background-color: #131313;
+}
+
+.modalStyle{
+    .modal-header{
+        border-bottom: none;
+        background-color: #EBF9FF;
+    }
+    .modal-body{
+        background-color: #EBF9FF;
+    }
+}

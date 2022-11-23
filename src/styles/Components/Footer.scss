@@ -1,0 +1,68 @@
+
+footer{
+    background-color: #131313;
+}
+
+footer,p,a{
+   color: #9CA3AF !important;
+   text-decoration: none !important;
+}
+
+.fo-s-1{
+padding: 5rem 0 2.68rem;
+font-family: 'Poppins', sans-serif;
+}
+
+.footer-col-1 p{
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.footer-col-2 a{
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.125rem;
+ 
+}
+
+.fo-s-2{
+  padding: 2.688rem 0 5.125rem;
+  border-top: 1px solid #374151;
+  font-size:0.875rem;
+  line-height:1.25rem;
+  font-weight: 400;
+}
+
+.fo-s-2 a{
+  border-bottom: 1px solid #9CA3AF;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+.footer_section .fa-brands{
+  font-size: 1.25rem;
+}
+
+/* Footer Body  */
+
+.modal-content{
+  background-color:#EBF9FF;
+}
+
+@media only screen and (max-width:768px){
+  .footer-col-1{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .fo-s-1{
+    padding: 3.125rem 0 2rem;
+  }
+    
+  .fo-s-2{
+      padding: 0 0 3.75rem;
+      border-top: none;
+  }
+}
+

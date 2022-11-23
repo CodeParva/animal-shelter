@@ -1,0 +1,55 @@
+.form-group{
+    position: relative;
+  }
+  
+  .success input{
+    border-width:2px;
+    border-color: #2ecc71;
+  }
+  
+  .error input{
+    border-width:2px;
+    border-color: #e74c3c;
+  }
+
+  .form-group i{
+    position: absolute;
+    top:13px;
+    right:10px;
+    visibility: hidden;
+  }
+  
+  .success i.fa-check-circle{
+    color:#2ecc71;
+    visibility: visible;
+  }
+  .error i.fa-exclamation-circle{
+    color:#e74c3c;
+    visibility: visible;
+  }
+  
+  .form-group small{
+    position: absolute;
+    left:1.5px;
+    // visibility: hidden;
+  }
+  
+  .error small{
+    color:#e74c3c;
+    visibility: visible;
+  }
+  #langSmall{
+    position: absolute;
+    left:450px;
+    color:red;
+    // visibility: hidden;
+    
+  }
+
+.breed_section{
+    display: none;
+}
+
+#smalls{
+    color: red;
+}

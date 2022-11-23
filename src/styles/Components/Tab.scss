@@ -1,0 +1,26 @@
+.tabs_toggle{
+    cursor: pointer; 
+}
+
+.tabs_toggle.is-active{
+    border-bottom:1px solid  #0075AA;
+    color: #0075AA;
+   
+}
+
+.tabs_content{
+    display: none;
+}
+
+.tabs_content.is-active{
+    display: block;
+}
+
+.table_head{
+    border-bottom:1px solid #000;
+   
+  }
+
+  table .caption-top,th,td{
+    padding: 0.5rem 0 !important;
+  }
